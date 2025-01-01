@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tourney Top 8</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="jquery.textfill.min.js"></script>
+        <script>
+            function display() {
+                if (!isNaN(125)) {
+                    $('.tagDisplay').html($('#tag').val());
+                    $('.tagDisplay2').html($('#tag2').val());
+                    $('.tagDisplay3').html($('#tag3').val());
+                    $('.tagDisplay4').html($('#tag4').val());
+                    $('.tagDisplay5').html($('#tag5').val());
+                    $('.tagDisplay6').html($('#tag6').val());
+                    $('.tagDisplay7').html($('#tag7').val());
+                    $('.tagDisplay8').html($('#tag8').val());
+                    $('.tourneyDisplay').html($('#tourneyName').val());
+                    
+                    $('.jtextfill').textfill({
+                        maxFontPixels: 125,
+                        minFontPixels: 30
+                    });
+
+                    $('.jtextfill2').textfill({
+                        maxFontPixels: 125,
+                        minFontPixels: 15
+                    });
+
+                    $('.jtextfill3').textfill({
+                        maxFontPixels: 125,
+                        minFontPixels: 15
+                    });
+
+                    $('.jtextfill4').textfill({
+                        maxFontPixels: 125,
+                        minFontPixels: 15
+                    });
+                    
+                    $('.jtextfill5').textfill({
+                        maxFontPixels: 125,
+                        minFontPixels: 10
+                    });
+
+                    $('.jtextfill6').textfill({
+                        maxFontPixels: 125,
+                        minFontPixels: 10
+                    });
+
+                    $('.jtextfill7').textfill({
+                        maxFontPixels: 125,
+                        minFontPixels: 10
+                    });
+
+                    $('.jtextfill8').textfill({
+                        maxFontPixels: 125,
+                        minFontPixels: 10
+                    });
+
+                    $('.jtextfill9').textfill({
+                        maxFontPixels: 125,
+                        minFontPixels: 10
+                    });
+                }
+            }   
+            $(function () {
+                $('#tag').keyup(display);
+                $('#tag2').keyup(display);
+                $('#tag3').keyup(display);
+                $('#tag4').keyup(display);
+                $('#tag5').keyup(display);
+                $('#tag6').keyup(display);
+                $('#tag7').keyup(display);
+                $('#tag8').keyup(display);
+                $('#tourneyName').keyup(display);
+                display()
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="background">
+            <div class="placingsBoxes">
+                <div class="first" id="imgDisplay">
+                    <input type="file" accept="image/*" id="file" style="display: none" onchange="loadFile(event)">
+                    <label for="file" id="label">Upload Image</label>
+                    <input type="text" placeholder="1st" spellcheck="false" class="input" id="tag">
+                    <div class="jtextfill">
+                        <span class="tagDisplay"></span>
+                    </div>
+                    <h1 class="placing1">1</h1>
+                </div>
+                <div class="second" id="imgDisplay2">
+                    <input type="file" accept="image/*" id="file2" style="display: none" onchange="loadFile2(event)">
+                    <label for="file2" id="label2">Upload Image</label>
+                    <input type="text" placeholder="2nd" spellcheck="false" class="input2" id="tag2">
+                    <div class="jtextfill2">
+                        <span class="tagDisplay2"></span>
+                    </div>
+                    <h1 class="placing2">2</h1>
+                </div>
+                <div class="third" id="imgDisplay3">
+                    <input type="file" accept="image/*" id="file3" style="display: none" onchange="loadFile3(event)">
+                    <label for="file3" id="label3">Upload Image</label>
+                    <input type="text" placeholder="3rd" spellcheck="false" class="input3" id="tag3">
+                    <div class="jtextfill3">
+                        <span class="tagDisplay3"></span>
+                    </div>
+                    <h1 class="placing2">3</h1>
+                </div>
+                <div class="fourth" id="imgDisplay4">
+                    <input type="file" accept="image/*" id="file4" style="display: none" onchange="loadFile4(event)">
+                    <label for="file4" id="label4">Upload Image</label>
+                    <input type="text" placeholder="4th" spellcheck="false" class="input4" id="tag4">
+                    <div class="jtextfill4">
+                        <span class="tagDisplay4"></span>
+                    </div>
+                    <h1 class="placing2">4</h1>
+                </div>
+                <div class="fifth" id="imgDisplay5">
+                    <input type="file" accept="image/*" id="file5" style="display: none" onchange="loadFile5(event)">
+                    <label for="file5" id="label5">Upload Image</label>
+                    <input type="text" placeholder="5th" spellcheck="false" class="input5" id="tag5">
+                    <div class="jtextfill5">
+                        <span class="tagDisplay5"></span>
+                    </div>
+                    <h1 class="placing3">5</h1>
+                </div>
+                <div class="fifth2" id="imgDisplay6">
+                    <input type="file" accept="image/*" id="file6" style="display: none" onchange="loadFile6(event)">
+                    <label for="file6" id="label6">Upload Image</label>
+                    <input type="text" placeholder="5th" spellcheck="false" class="input6" id="tag6">
+                    <div class="jtextfill6">
+                        <span class="tagDisplay6"></span>
+                    </div>
+                    <h1 class="placing3">5</h1>
+                </div>
+                <div class="seventh" id="imgDisplay7">
+                    <input type="file" accept="image/*" id="file7" style="display: none" onchange="loadFile7(event)">
+                    <label for="file7" id="label7">Upload Image</label>
+                    <input type="text" placeholder="7th" spellcheck="false" class="input7" id="tag7">
+                    <div class="jtextfill7">
+                        <span class="tagDisplay7"></span>
+                    </div>
+                    <h1 class="placing3">7</h1>
+                </div>
+                <div class="seventh2" id="imgDisplay8">
+                    <input type="file" accept="image/*" id="file8" style="display: none" onchange="loadFile8(event)">
+                    <label for="file8" id="label8">Upload Image</label>
+                    <input type="text" placeholder="7th" spellcheck="false" class="input8" id="tag8">
+                    <div class="jtextfill8">
+                        <span class="tagDisplay8"></span>
+                    </div>
+                    <h1 class="placing3">7</h1>
+                </div>
+            </div>
+            <div class="info">
+                <input type="text" placeholder="Tourney Name" spellcheck="false" class="input9" id="tourneyName">
+                <div class="jtextfill9">
+                    <span class="tourneyDisplay"></span>
+                </div>
+                <button class="hideGUI" onclick="hideGUI()" id="button">Click to hide buttons and text boxes</button>
+                <div class="tourneyLogo" id="imgDisplay9">
+                    <input type="file" accept="image/*" id="file9" style="display: none;" onchange="loadFile9(event)">
+                    <label for="file9" id="label9">Upload Tourney Logo</label>
+                </div>
+                <div class="dropdown">
+                    <button class="buttonBG" id="buttonBG">Change background colour</button> 
+                    <div class="colours">
+                        <button class="black" onclick="changeBG('black')" id="blackBG">Black</button>
+                        <button class="blue" onclick="changeBG('blue')" id="blueBG">Blue</button>
+                        <button class="green" onclick="changeBG('green')" id="greenBG">Green</button>
+                        <button class="purple" onclick="changeBG('purple')" id="purpleBG">Purple</button>
+                        <button class="red" onclick="changeBG('red')" id="redBG">Red</button>
+                        <button class="teal" onclick="changeBG('teal')" id="tealBG">Teal</button>
+                        <button class="yellow" onclick="changeBG('yellow')" id="yellowBG">Yellow</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var imgDisplay = document.getElementById("imgDisplay");
+            var imgDisplay2 = document.getElementById("imgDisplay2");
+            var imgDisplay3 = document.getElementById("imgDisplay3");
+            var imgDisplay4 = document.getElementById("imgDisplay4");
+            var imgDisplay5 = document.getElementById("imgDisplay5");
+            var imgDisplay6 = document.getElementById("imgDisplay6");
+            var imgDisplay7 = document.getElementById("imgDisplay7");
+            var imgDisplay8 = document.getElementById("imgDisplay8");
+            var imgDisplay9 = document.getElementById("imgDisplay9");
+
+            function loadFile(event) {
+                imgDisplay.style.backgroundImage = "url(" + URL.createObjectURL(event.target.files[0]) + ")";
+                imgDisplay.style.backgroundSize = "100%";
+                imgDisplay.style.backgroundRepeat = "no-repeat";
+            }
+
+            function loadFile2(event) {
+                imgDisplay2.style.backgroundImage = "url(" + URL.createObjectURL(event.target.files[0]) + ")";
+            }
+
+            function loadFile3(event) {
+                imgDisplay3.style.backgroundImage = "url(" + URL.createObjectURL(event.target.files[0]) + ")";
+            }
+
+            function loadFile4(event) {
+                imgDisplay4.style.backgroundImage = "url(" + URL.createObjectURL(event.target.files[0]) + ")";
+            }
+
+            function loadFile5(event) {
+                imgDisplay5.style.backgroundImage = "url(" + URL.createObjectURL(event.target.files[0]) + ")";
+            }
+
+            function loadFile6(event) {
+                imgDisplay6.style.backgroundImage = "url(" + URL.createObjectURL(event.target.files[0]) + ")";
+            }
+
+            function loadFile7(event) {
+                imgDisplay7.style.backgroundImage = "url(" + URL.createObjectURL(event.target.files[0]) + ")";
+            }
+
+            function loadFile8(event) {
+                imgDisplay8.style.backgroundImage = "url(" + URL.createObjectURL(event.target.files[0]) + ")";
+            }
+
+            function loadFile9(event) {
+                imgDisplay9.style.backgroundImage = "url(" + URL.createObjectURL(event.target.files[0]) + ")";
+                imgDisplay9.style.backgroundPosition = "center";
+                imgDisplay9.style.backgroundSize = "contain";
+                imgDisplay9.style.backgroundRepeat = "no-repeat";
+            }
+
+            function hideGUI() {
+                label.style.visibility = "hidden";
+                label2.style.visibility = "hidden";
+                label3.style.visibility = "hidden";
+                label4.style.visibility = "hidden";
+                label5.style.visibility = "hidden";
+                label6.style.visibility = "hidden";
+                label7.style.visibility = "hidden";
+                label8.style.visibility = "hidden";
+                label9.style.visibility = "hidden";
+                button.style.visibility = "hidden";
+                buttonBG.style.display = "none";
+                tag.style.display = "none";
+                tag2.style.display = "none";
+                tag3.style.display = "none";
+                tag4.style.display = "none";
+                tag5.style.display = "none";
+                tag6.style.display = "none";
+                tag7.style.display = "none";
+                tag8.style.display = "none";
+                tourneyName.style.visibility = "hidden";
+            }
+
+            function changeBG(colour) {
+                var placing1 = document.getElementsByClassName("placing1");
+                var placing2 = document.getElementsByClassName("placing2");
+                var placing3 = document.getElementsByClassName("placing3");
+                switch (colour) {
+                    case "green":
+                        document.getElementsByTagName("body")[0].style.backgroundImage = "url('images/bgGreen.png')";
+                        for (var x = 0; x < placing1.length; x++) {
+                            placing1[x].style.textShadow = "0 0 black, 0.05em 0.03em rgb(56, 200, 46), 0 0 black, 0 0 black";
+                        }
+                        for (var x = 0; x < placing2.length; x++) {
+                            placing2[x].style.textShadow = "0 0 black, 0.05em 0.04em rgb(56, 200, 46), 0 0 black, 0 0 black";
+                        }
+                        for (var x = 0; x < placing3.length; x++) {
+                            placing3[x].style.textShadow = "0 0 black, 0.05em 0.04em rgb(56, 200, 46), 0 0 black, 0 0 black";
+                        }
+                        break;
+                    case "red":
+                        document.getElementsByTagName("body")[0].style.backgroundImage = "url('images/bgRed.png')";
+                        for (var x = 0; x < placing1.length; x++) {
+                            placing1[x].style.textShadow = "0 0 black, 0.05em 0.03em rgb(215, 60, 60), 0 0 black, 0 0 black";
+                        }
+                        for (var x = 0; x < placing2.length; x++) {
+                            placing2[x].style.textShadow = "0 0 black, 0.05em 0.04em rgb(215, 60, 60), 0 0 black, 0 0 black";
+                        }
+                        for (var x = 0; x < placing3.length; x++) {
+                            placing3[x].style.textShadow = "0 0 black, 0.05em 0.04em rgb(215, 60, 60), 0 0 black, 0 0 black";
+                        }
+                        break;
+                    case "black":
+                        document.getElementsByTagName("body")[0].style.backgroundImage = "url('images/bg.png')";
+                        for (var x = 0; x < placing1.length; x++) {
+                            placing1[x].style.textShadow = "0 0 black, 0.05em 0.03em black, 0 0 black, 0 0 black";
+                        }
+                        for (var x = 0; x < placing2.length; x++) {
+                            placing2[x].style.textShadow = "0 0 black, 0.05em 0.04em black, 0 0 black, 0 0 black";
+                        }
+                        for (var x = 0; x < placing3.length; x++) {
+                            placing3[x].style.textShadow = "0 0 black, 0.05em 0.04em black, 0 0 black, 0 0 black";
+                        }
+                        break;
+                    case "blue":
+                        document.getElementsByTagName("body")[0].style.backgroundImage = "url('images/bgBlue.png')";
+                        for (var x = 0; x < placing1.length; x++) {
+                            placing1[x].style.textShadow = "0 0 black, 0.05em 0.03em rgb(45, 61, 226), 0 0 black, 0 0 black";
+                        }
+                        for (var x = 0; x < placing2.length; x++) {
+                            placing2[x].style.textShadow = "0 0 black, 0.05em 0.04em rgb(45, 61, 226), 0 0 black, 0 0 black";
+                        }
+                        for (var x = 0; x < placing3.length; x++) {
+                            placing3[x].style.textShadow = "0 0 black, 0.05em 0.04em rgb(45, 61, 226), 0 0 black, 0 0 black";
+                        }
+                        break;
+                    case "purple":
+                        document.getElementsByTagName("body")[0].style.backgroundImage = "url('images/bgPurple.png')";
+                        for (var x = 0; x < placing1.length; x++) {
+                            placing1[x].style.textShadow = "0 0 black, 0.05em 0.03em rgb(168, 40, 219), 0 0 black, 0 0 black";
+                        }
+                        for (var x = 0; x < placing2.length; x++) {
+                            placing2[x].style.textShadow = "0 0 black, 0.05em 0.04em rgb(168, 40, 219), 0 0 black, 0 0 black";
+                        }
+                        for (var x = 0; x < placing3.length; x++) {
+                            placing3[x].style.textShadow = "0 0 black, 0.05em 0.04em rgb(168, 40, 219), 0 0 black, 0 0 black";
+                        }
+                        break;
+                    case "yellow":
+                        document.getElementsByTagName("body")[0].style.backgroundImage = "url('images/bgYellow.png')";
+                        for (var x = 0; x < placing1.length; x++) {
+                            placing1[x].style.textShadow = "0 0 black, 0.05em 0.03em rgb(212, 212, 0), 0 0 black, 0 0 black";
+                        }
+                        for (var x = 0; x < placing2.length; x++) {
+                            placing2[x].style.textShadow = "0 0 black, 0.05em 0.04em rgb(212, 212, 0), 0 0 black, 0 0 black";
+                        }
+                        for (var x = 0; x < placing3.length; x++) {
+                            placing3[x].style.textShadow = "0 0 black, 0.05em 0.04em rgb(212, 212, 0), 0 0 black, 0 0 black";
+                        }
+                        break;
+                    case "teal":
+                        document.getElementsByTagName("body")[0].style.backgroundImage = "url('images/bgTeal.png')";
+                        for (var x = 0; x < placing1.length; x++) {
+                            placing1[x].style.textShadow = "0 0 black, 0.05em 0.03em rgb(60, 202, 212), 0 0 black, 0 0 black";
+                        }
+                        for (var x = 0; x < placing2.length; x++) {
+                            placing2[x].style.textShadow = "0 0 black, 0.05em 0.04em rgb(60, 202, 212), 0 0 black, 0 0 black";
+                        }
+                        for (var x = 0; x < placing3.length; x++) {
+                            placing3[x].style.textShadow = "0 0 black, 0.05em 0.04em rgb(60, 202, 212), 0 0 black, 0 0 black";
+                        }
+                        break;
+                    default:
+                        document.getElementsByTagName("body")[0].style.backgroundImage = "url('images/bg.png')";
+                        for (var x = 0; x < placing1.length; x++) {
+                            placing1[x].style.textShadow = "0 0 black, 0.05em 0.03em black, 0 0 black, 0 0 black";
+                        }
+                        for (var x = 0; x < placing2.length; x++) {
+                            placing2[x].style.textShadow = "0 0 black, 0.05em 0.04em black, 0 0 black, 0 0 black";
+                        }
+                        for (var x = 0; x < placing3.length; x++) {
+                            placing3[x].style.textShadow = "0 0 black, 0.05em 0.04em black, 0 0 black, 0 0 black";
+                        }
+                }
+            }
+        </script>
+    </body>
+</html>
