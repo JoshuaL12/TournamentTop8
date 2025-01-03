@@ -82,7 +82,7 @@
     </head>
 
     <body>
-        <div class="background">
+        <div class="background" id="background">
             <div class="placingsBoxes">
                 <div class="first" id="imgDisplay">
                     <input type="file" accept="image/*" id="file" style="display: none" onchange="loadFile(event)">
@@ -195,36 +195,50 @@
 
             function loadFile(event) {
                 imgDisplay.style.backgroundImage = "url(" + URL.createObjectURL(event.target.files[0]) + ")";
-                imgDisplay.style.backgroundSize = "100%";
+                imgDisplay.style.backgroundSize = "contain";
                 imgDisplay.style.backgroundRepeat = "no-repeat";
             }
 
             function loadFile2(event) {
                 imgDisplay2.style.backgroundImage = "url(" + URL.createObjectURL(event.target.files[0]) + ")";
+                imgDisplay2.style.backgroundSize = "contain";
+                imgDisplay2.style.backgroundRepeat = "no-repeat";
             }
 
             function loadFile3(event) {
                 imgDisplay3.style.backgroundImage = "url(" + URL.createObjectURL(event.target.files[0]) + ")";
+                imgDisplay3.style.backgroundSize = "contain";
+                imgDisplay3.style.backgroundRepeat = "no-repeat";
             }
 
             function loadFile4(event) {
                 imgDisplay4.style.backgroundImage = "url(" + URL.createObjectURL(event.target.files[0]) + ")";
+                imgDisplay4.style.backgroundSize = "contain";
+                imgDisplay4.style.backgroundRepeat = "no-repeat";
             }
 
             function loadFile5(event) {
                 imgDisplay5.style.backgroundImage = "url(" + URL.createObjectURL(event.target.files[0]) + ")";
+                imgDisplay5.style.backgroundSize = "contain";
+                imgDisplay5.style.backgroundRepeat = "no-repeat";
             }
 
             function loadFile6(event) {
                 imgDisplay6.style.backgroundImage = "url(" + URL.createObjectURL(event.target.files[0]) + ")";
+                imgDisplay6.style.backgroundSize = "contain";
+                imgDisplay6.style.backgroundRepeat = "no-repeat";
             }
 
             function loadFile7(event) {
                 imgDisplay7.style.backgroundImage = "url(" + URL.createObjectURL(event.target.files[0]) + ")";
+                imgDisplay7.style.backgroundSize = "contain";
+                imgDisplay7.style.backgroundRepeat = "no-repeat";
             }
 
             function loadFile8(event) {
                 imgDisplay8.style.backgroundImage = "url(" + URL.createObjectURL(event.target.files[0]) + ")";
+                imgDisplay8.style.backgroundSize = "contain";
+                imgDisplay8.style.backgroundRepeat = "no-repeat";
             }
 
             function loadFile9(event) {
