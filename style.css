@@ -4,6 +4,7 @@ body {
     background-image: url("images/bg.png");
     background-position: 50% 0;
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .placingsBoxes div {
